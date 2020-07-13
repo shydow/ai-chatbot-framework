@@ -1,5 +1,9 @@
 FROM python:3.6-slim
 
+# Proxy 
+ENV http_proxy <http proxy>
+ENV http_proxy <http proxy>
+
 # Install common libraries
 RUN apt-get update -qq \
  && apt-get install -y --no-install-recommends \
